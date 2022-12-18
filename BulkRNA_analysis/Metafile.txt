@@ -1,0 +1,11 @@
+SampleName	FileName	Condition	Replicate	Name
+WT1	GK3R188-Wt1_counts.txt	WT	1	WT1
+WT2	GK3R189-Wt2_counts.txt	WT	2	WT2
+C1	GK3R190-C1_counts.txt	C	1	C1
+C2	GK3R191-C2_counts.txt	C	2	C2
+C3	GK3R192-C3_counts.txt	C	3	C3
+Tg197-1	GK3R193-Tg197-1_counts.txt	Tg197	1	Tg197-1
+Tg197-2	GK3R194-Tg197-2_counts.txt	Tg197	2	Tg197-2
+Tg197-3	GK3R195-Tg197-3_counts.txt	Tg197	3	Tg197-3
+Tg197-C1	GK3R196-Tg197-C1_counts.txt	Tg197-C	1	Tg197-C1
+Tg197-C3	GK3R198-Tg197-C3_counts.txt	Tg197-C	3	Tg197-C3
