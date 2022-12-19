@@ -32,8 +32,8 @@ ggplot(pcaData, aes(PC1, PC2, color=Condition)) +
 ggsave("condition_PCA.pdf", width = 3.75, height = 2.84, dpi = 600)
 
 #----------------------DESeq2 results-------------------------------------------
-control <- c("WT", "WT", "WT")
-experimental <- c("C", "Tg197", "Tg197-C")
+control <- c("WT", "WT", "WT", "Tg197")
+experimental <- c("C", "Tg197", "Tg197-C", "Tg197-C")
 
 for(i in 1:length(experimental))
 {
@@ -143,6 +143,7 @@ filterDEGs_Up_Down_Pval <- function(file_path, contrast, pval, l2fc_up, l2fc_dow
 filterDEGs_Up_Down_Pval("DESeq2-Condition_C_vs_WT.txt", "C_vs_WT", 0.05, 1, -1)
 filterDEGs_Up_Down_Pval("DESeq2-Condition_Tg197_vs_WT.txt", "Tg197_vs_WT", 0.05, 1, -1)
 filterDEGs_Up_Down_Pval("DESeq2-Condition_Tg197-C_vs_WT.txt", "Tg197-C_vs_Wt", 0.05, 1, -1)
+filterDEGs_Up_Down_Pval("DESeq2-Condition_Tg197-C_vs_Tg197.txt", "Tg197-C_vs_Tg197", 0.05, 1, -1)
 
 #--------------------------Heatmap----------------------------------------------
 library(dplyr)
